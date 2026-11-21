@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f9ff">
+  <meta name="description" content="Bondhu AI — তোমার নিজের AI সহকারী">
+  <title>Bondhu AI</title>
+  <link rel="icon" type="image/png" href="/bondhu-ai-logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-brand">
+        <img src="/bondhu-ai-logo.png" alt="Bondhu AI logo">
+        <span>Bondhu <b>AI</b></span>
+      </div>
+      <button class="new-chat" id="newChat"><span>＋</span> নতুন চ্যাট</button>
+      <p class="side-label">সাম্প্রতিক</p>
+      <div class="history" id="history"><p class="empty-history">এখনো কোনো চ্যাট নেই</p></div>
+      <div class="side-bottom"><span class="online-dot"></span> ব্যক্তিগত AI সহকারী</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="মেনু">☰</button>
+        <div class="mobile-brand"><img src="/bondhu-ai-logo.png" alt=""><strong>Bondhu <em>AI</em></strong></div>
+        <span class="top-note"><i></i> AI সহকারী</span>
+      </header>
+
+      <section class="workspace">
+        <div class="welcome" id="welcome">
+          <img class="hero-logo" src="/bondhu-ai-logo.png" alt="Bondhu AI">
+          <p class="eyebrow">তোমার নিজের AI সঙ্গী</p>
+          <h1>স্বাগতম <span>Bondhu AI</span>-তে</h1>
+          <p class="welcome-copy">আজ কী জানতে চাও? যেকোনো প্রশ্ন করো, আমি সাহায্য করার চেষ্টা করব।</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="আমাকে নতুন কিছু শেখাও">✦ <span>নতুন কিছু শিখি</span></button>
+            <button class="suggestion" data-prompt="আমার পড়াশোনার জন্য একটি পরিকল্পনা তৈরি করো">▤ <span>পড়াশোনার পরিকল্পনা</span></button>
+            <button class="suggestion" data-prompt="এই কোডটি বুঝতে সাহায্য করো">⌘ <span>কোডিং সহায়তা</span></button>
+          </div>
+        </div>
+
+        <section class="chat" id="chat" aria-live="polite" aria-label="কথোপকথন"></section>
+        <div class="composer-wrap">
+          <form id="form" class="composer">
+            <textarea id="prompt" rows="1" placeholder="Bondhu AI-কে কিছু জিজ্ঞেস করো..." aria-label="মেসেজ লিখুন"></textarea>
+            <button type="button" class="voice-btn" id="voiceBtn" aria-label="ভয়েস ইনপুট" title="ভয়েসে বলুন">🎙</button>
+            <button id="send" class="send-btn" type="submit" aria-label="পাঠান">➤</button>
+          </form>
+          <p class="hint" id="hint">Enter চাপলে পাঠাবে · Shift + Enter দিলে নতুন লাইন</p>
+        </div>
+        <footer>Build by <strong>MD Fahim Dewan</strong></footer>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
